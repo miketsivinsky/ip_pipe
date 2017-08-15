@@ -162,7 +162,7 @@ template<typename T> void TRxPipeTester<T>::postProcess(bool bypass)
 		if(*buf != mValue) {
 			//_tprintf(TEXT("[***] idx = %4d, received(%6d) != expected(%6d)\n"),k, *buf, mValue);
 			if(mEnaStreamSync) {
-				_tprintf(TEXT("[***] idx = %4d, received(%6d) != expected(%6d)\n"),k, *buf, mValue);
+				_tprintf(TEXT("[***] idx = %4d, received(%6ld) != expected(%6ld)\n"),k, int(*buf), int(mValue));
 				mValue = *buf;
 			}
             ++mPacketErrors;

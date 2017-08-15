@@ -5,7 +5,7 @@
 
 namespace IP_pipe
 {
-	typedef enum TStatus
+	enum TStatus
 	{
 		Ok                 = 0,
 		NotReady           = 1,
