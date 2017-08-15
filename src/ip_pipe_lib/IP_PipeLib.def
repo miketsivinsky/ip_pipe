@@ -1,0 +1,18 @@
+LIBRARY ip_pipe_lib
+
+EXPORTS 
+    genPipeViewName @1
+    isPipeViewExist @2
+    createPipeView  @3
+    setRdy          @4
+    waitPeerRdy     @5
+    isReady         @6
+    isPeerReady     @7
+    isPipeReady     @8
+    chunkNum        @9
+    usedChunkNum    @10
+    isBufEmpty      @11
+    isBufFull       @12
+    transferBuf     @13
+    chunkAccess     @14
+    advanceIdx      @15
